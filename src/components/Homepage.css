@@ -1,0 +1,15 @@
+
+.img-container {
+    display: block;
+    -webkit-user-select: none;
+    cursor: zoom-in;
+    background-color: hsl(7, 4%, 129%);
+    transition: background-color 237ms;
+    width: 1366px;
+    height: 430px;
+    background-repeat: no-repeat;
+          
+  }
+  .content{
+    padding-top: 10%;
+  }
