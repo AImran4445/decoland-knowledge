@@ -3,8 +3,8 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: transparent;
-    z-index: var(--z-fixed);
+    background-color: #ffffff;
+    z-index: 999;
    }
    
    .nav {

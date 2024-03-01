@@ -63,8 +63,8 @@
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
     transition: color 0.4s;
-    text-decoration: none; /* Remove underline */
-    padding: 10px; /* Add padding for spacing */
+    text-decoration: none; 
+    padding: 10px; 
     text-decoration: none;
     padding-bottom: 1px;
     background: none;

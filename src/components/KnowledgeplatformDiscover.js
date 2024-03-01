@@ -1,17 +1,18 @@
 import React from 'react';
 import './knowledgeplatformDiscover.css';
+import SunburstAnyChart from './SunburstAnyChart';
+import articleImage from '../assets/image-7.png';
+import arrow from '../assets/arrow-button.png';
+import articleimage from '../assets/image-article.png';
+import podcastsImage from '../assets/image-podcasts.png';
+import { Link } from 'react-router-dom';
 
 function KnowledgeplatformDiscover() {
   return (
     <div className='main-container'>
       <div className='left-container'>
-        <h2 className='graph-heading'>Graph</h2>
-        {/* Dummy graph */}
         <div className='dummy-graph'>
-          {/* You can customize this with SVG or any other graph library */}
-          <svg width='100' height='100'>
-            <circle cx='50' cy='50' r='40' stroke='black' strokeWidth='3' fill='red' />
-          </svg>
+         <SunburstAnyChart/>
         </div>
       </div>
       <div className='right-container'>
@@ -21,18 +22,79 @@ function KnowledgeplatformDiscover() {
         </p>
         <p className='read-button'>Read more</p>
         <div className="toggle-switch">
-        <input type="checkbox" className="toggle-switch-checkbox" id="toggleSwitch" />
-        <label className="toggle-switch-label" htmlFor="toggleSwitch">
-            <span className="toggle-switch-inner">
-            <span className="toggle-switch-text">Browse</span>
-            <span className="toggle-switch-text">Latest</span>
-            </span>
-            <span className="toggle-switch-switch"></span>
-        </label>
+            <input type="checkbox" className="toggle-switch-checkbox" id="toggleSwitch" />
+            <label className="toggle-switch-label" htmlFor="toggleSwitch">
+                <span className="toggle-switch-inner">
+                <span className="toggle-switch-text">Browse</span>
+                <span className="toggle-switch-text">Latest</span>
+                </span>
+                <span className="toggle-switch-switch"></span>
+            </label>
+        </div>
+        <div className='articles'>
+            <h2 className='article-heading'> Articles </h2>
+            <div className='article-1'>
+            <div class="card">
+          <div class="card-image">
+              <img src={articleImage} alt="Image"/>
+          </div>
+          <div class="card-content">
+              <h2>Enhancing User Experience in NFT Marketplaces</h2>
+              <p>Unravel the innovative ways blockchain technology and NFTs are revolutionizing the design and functionality of UI cards within digital marketplaces. </p>
+              <Link to='/articlepage'>
+              <img className='arrow' src={arrow} alt='-->'/>
+              </Link> 
+          </div>
+         </div>
+            </div>
+            <div className='article-1'>
+            <div class="card">
+          <div class="card-image">
+              <img  src={articleimage} alt='Image'/>
+          </div>
+          <div class="card-content">
+              <h2>NFT Collections</h2>
+              <p>Discover the essential design principles and best practices for creating captivating UI cards tailored specifically for NFT collections. Explore the significance of visual storytelling, interactive elements.</p>
+              <Link to='/articlepage'>
+              <img className='arrow' src={arrow} alt='-->'/>
+              </Link> 
+          </div>
+         </div>
+            </div>
+        </div>
+        <div className='articles'>
+            <h2 className='article-heading'> Podcasts </h2>
+            <div className='article-1'>
+            <div class="card">
+          <div class="card-image">
+              <img src={podcastsImage} alt="Image"/>
+          </div>
+          <div class="card-content">
+              <h2>Unravel the innovative ways blockchain technology</h2>
+              <p>Unravel the innovative ways blockchain technology and NFTs are revolutionizing the design and functionality of UI cards within digital marketplaces.  </p>
+              <Link to='/articlepage'>
+              <img className='arrow' src={arrow} alt='-->'/>
+              </Link> 
+          </div>
+         </div>
+            </div>
+            <div className='article-1'>
+            <div class="card">
+          <div class="card-image">
+              <img  src={articleimage} alt='Image'/>
+          </div>
+          <div class="card-content">
+              <h2>NFT Collections</h2>
+              <p>Discover the essential design principles and best practices for creating captivating UI cards tailored specifically for NFT collections. Explore the significance of visual storytelling, interactive elements.</p>
+              <Link to='/articlepage'>
+              <img className='arrow' src={arrow} alt='-->'/>
+              </Link>  
+          </div>
+         </div>
+            </div>
         </div>
       </div>
     </div>
   );
 }
-
 export default KnowledgeplatformDiscover;

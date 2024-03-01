@@ -1,0 +1,46 @@
+.form-whole-container{
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.form-container
+{
+    border: 1px solid #000000;
+    border-radius: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 85%;
+ 
+}
+.forms-1st-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 12px;
+    background-color: gray;
+}
+.form-arrow-back{
+    width: 3%;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.form-2nd-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.form-2nd-container h2{
+    font-size: 28px;
+}
+.form-3rd-container{
+    padding-top: 15px;
+    width: 37%;
+    padding-bottom: 15px;
+}
+.text-form-3rd-container{
+    padding: 20px;
+    color: #ffffff;
+    background-color: #000000;
+}
+

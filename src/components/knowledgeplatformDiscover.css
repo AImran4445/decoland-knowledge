@@ -63,7 +63,7 @@
   .toggle-switch-label {
     display: block;
     position: relative;
-    width: 100%; /* Adjust width to fit the labels */
+    width: 92%; /* Adjust width to fit the labels */
     height: 34px;
     border-radius: 34px;
     background-color: #ccc;
@@ -108,4 +108,72 @@
   .toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
     transform: translateX(calc(100% - 6px)); /* Adjust based on the width of the switch */
   }
+  .article-heading{
+    color: #D9D9D9;
+    font-size: 30px;
+    line-height: 55px;
+  }
+  .article-1
+  {
+    width: 96%;
+    height: 2%;
+    border-radius: 10px;
+  }
+  .card {
+    max-width: 600px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for layout */
+    border: 1.5px solid #E3E3E3;
+}
+
+.card-image {
+    flex: 0 0 24%; /* Image takes up 40% of the card width */
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    flex: 1; /* Card content takes up remaining space */
+    padding: 2px 13px;
+}
+
+.card-content h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.card-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+.arrow{
+    padding-bottom: 9px; 
+    width: 8%;
+    display: flex;
+    float: right;
+    padding-right: 20px;
+}
+
   
