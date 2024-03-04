@@ -8,6 +8,7 @@ import "./App.css";
 import { useLocation } from "react-router-dom";
 import Articlepage from './components/Articlepage';
 import FillForm from './components/FillForm';
+import Podcasts from './components/Podcasts';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/mission" element={<Ourmission />} />
           <Route path="/Knowledgeplatform" element={<Knowledgeplatform />} />
           <Route path='/articlepage' element = {<Articlepage/>}/>
+          <Route path='/podcasts' element ={<Podcasts/>}/>
           <Route path='/form' element = {<FillForm/>}/>
         
      </Routes>

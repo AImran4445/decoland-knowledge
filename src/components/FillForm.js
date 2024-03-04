@@ -11,6 +11,7 @@ function FillForm() {
     <div className='content'>
       <div className='form-whole-container'>
         <div className='form-container'>
+          <div className='second-container'> 
             <div className='form-1st-container'>
                     <Link to='/knowledgeplatform'>
                       <img className='form-arrow-back' src={Arrowback} alt='no-arrow-back' />
@@ -39,27 +40,27 @@ function FillForm() {
                   <input type="radio" id="ali" name="choice"/>
                   <label for="ali">Announcements</label>
                 </div>
-
                 <div class="option">
                   <input type="radio" id="imran" name="choice"/>
                   <label for="imran">Media</label>
                 </div>
-
                 <div class="option">
                   <input type="radio" id="zain" name="choice"/>
                   <label for="zain">Donor</label>
                 </div>
-
                 <div class="option">
                   <input type="radio" id="salman" name="choice"/>
                   <label for="salman">Other</label>
                 </div>
               </div>
               </div>
-
+            </div>
             </div>
             </div>
         </div>
+      </div>
+      <div className='last-container'>
+        
       </div>
       </div>
     </>
