@@ -12,13 +12,13 @@ function Podcasts() {
      <div className='content'>
       <div className='podcast-whole-container'>
         <div className='podcast-container'>
-            <div className='podcast-1st-container'>
-               <div className='podcast-left-side'>
                   <div className='podcast-left-inner-1'>
                     <Link to='/knowledgeplatform'>
                       <img className='arrow-back' src={Arrowback} alt='no-arrow-back' />
                     </Link>
                   </div>
+            <div className='podcast-1st-container'>
+               <div className='podcast-left-side'>
                   <div className='podcast-left-inner-3'>
                     <h2> Unravel the innovative ways blockchain technology </h2>
                   </div>

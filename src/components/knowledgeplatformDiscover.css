@@ -131,7 +131,7 @@
 }
 
 .card-image {
-    flex: 0 0 24%; /* Image takes up 40% of the card width */
+  padding: 10px;
 }
 
 .card-image img {

@@ -17,28 +17,37 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 12px;
+    position: relative;
 }
 /* .podcast-left-inner-3 h2{
     color: #ffffff;
 } */
 .podcast-left-side
 {
-    flex: 1;
-    padding-left: 24px;
+    position: absolute;
 }
 .podcast-right-side{
-    flex: 1;
-    padding-left: 30%;
     
 }
 .right-side-image{
-    width: 98%;
-    height: 98%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.right-side-image::before{
+    position:absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+
 }
 
 .arrow-back{
-    width: 9%;
-    
+    width: 50px;
+    margin: 20px;
 }
 .podcast-word{
     width: 28%;
