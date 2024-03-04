@@ -20,7 +20,7 @@ function Podcasts() {
                     </Link>
                   </div>
                   <div className='podcast-left-inner-3'>
-                    <h2>Unravel the innovative ways blockchain technology </h2>
+                    <h2> Unravel the innovative ways blockchain technology </h2>
                   </div>
                   <div className='podcast-left-inner-4'>
                     <Link to='/form'>
