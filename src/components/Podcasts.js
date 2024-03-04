@@ -39,8 +39,7 @@ function Podcasts() {
             </div>
             <div className='podcast-2-container'>
                  <p>
-                 A grid system is a design tool used to arrange content on a webpage. It is a series of vertical and horizontal lines that create a matrix of intersecting points, which can be used to align and organize page elements. 
-                 <br/>
+                A grid system is a design tool used to arrange content on a webpage. It is a series of vertical and horizontal lines that create a matrix of intersecting points, which can be used to align and organize page elements.<br/>
                 It is a starkly binary legal question: yes or no. Training AI models on copyrighted material either infringes the copyright or doesn’t. And the two possible outcomes point toward very different future worlds. <br/>
                 What would it mean if the AI companies’ lawyers prevail, and courts find that AI models may freely ingest copyright-protected material? Having been trained on authors’ work, AI models will sooner or later be able to do almost exactly what all those authors do, and more, millions of times faster. So AI models’ owners, and not authors, will own most of the fruits of creative labor. <br/>
                 At that point things could get very weird. Disenfranchised authors might start sharing their work only in the shadows by forbidding recordings, banning reviews, and so on. Luddite subcultures might form around efforts to keep creative work off the record and out of the systems. <br/>

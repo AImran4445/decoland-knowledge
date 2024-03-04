@@ -55,7 +55,7 @@ function KnowledgeplatformDiscover() {
           <div class="card-content">
               <h2>NFT Collections</h2>
               <p>Discover the essential design principles and best practices for creating captivating UI cards tailored specifically for NFT collections. Explore the significance of visual storytelling, interactive elements.</p>
-              <Link to='/podcasts'>
+              <Link to='/articlepage'>
               <img className='arrow' src={arrow} alt='-->'/>
               </Link> 
           </div>
@@ -86,7 +86,7 @@ function KnowledgeplatformDiscover() {
           <div class="card-content">
               <h2>NFT Collections</h2>
               <p>Discover the essential design principles and best practices for creating captivating UI cards tailored specifically for NFT collections. Explore the significance of visual storytelling, interactive elements.</p>
-              <Link to='/articlepage'>
+              <Link to='/podcasts'>
               <img className='arrow' src={arrow} alt='-->'/>
               </Link>  
           </div>

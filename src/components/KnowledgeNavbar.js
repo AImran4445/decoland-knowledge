@@ -40,14 +40,12 @@ function KnowledgeNavbar() {
               <li className="nav__item">
                 <Link
                   to="/about-us"
-                  className="nav__link"
-                >
+                  className="nav__link">
                   Resources
                 </Link>
               </li>
             </ul>
           </div>
-   
           <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
             <IoMenu />
           </div>
