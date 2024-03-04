@@ -37,23 +37,26 @@ function FillForm() {
               <div className='option-3rd-contianer'>
               <div class="options">
                 <div class="option">
-                  <input type="radio" id="ali" name="choice"/>
+                  <input type="checkbox" id="ali" name="choice"/>
                   <label for="ali">Announcements</label>
                 </div>
                 <div class="option">
-                  <input type="radio" id="imran" name="choice"/>
+                  <input type="checkbox" id="imran" name="choice"/>
                   <label for="imran">Media</label>
                 </div>
                 <div class="option">
-                  <input type="radio" id="zain" name="choice"/>
+                  <input type="checkbox" id="zain" name="choice"/>
                   <label for="zain">Donor</label>
                 </div>
                 <div class="option">
-                  <input type="radio" id="salman" name="choice"/>
+                  <input type="checkbox" id="salman" name="choice"/>
                   <label for="salman">Other</label>
                 </div>
               </div>
               </div>
+            </div>
+            <div class="download-btn">
+              <button>Download Now</button>
             </div>
             </div>
             </div>
