@@ -2,7 +2,7 @@ import React from 'react';
 import KnowledgeNavbar from './KnowledgeNavbar';
 import { Link } from 'react-router-dom';
 import Arrowback from '../assets/arrow-back.png';
-import podcastImage from '../assets/podcastwali.png'
+import podcastImage from '../assets/podcast.png'
 import './Podcast.css';
 import pausebutton from '../assets/Pause-button.png';
 
@@ -24,7 +24,15 @@ function Podcasts() {
                    <img src={pausebutton} alt='pause-button' />
                 </div>
                   <div className='podcast-left-inner-3'>
-                    <h2> Unravel the innovative ways </h2>
+                    <h2>Unravel the innovative ways blockchain technology</h2>
+                    <p>MAY 31ST, 2022 | <b>01:24:45</b> | E31</p>
+                    <div className='btn-wrapper'>
+                      <button>Share</button>
+                      <button>Subscribe</button>
+                    </div>
+                  </div>
+                  <div className='podcast-left-inner-4'>
+                    <button>Download</button>
                   </div>
                </div>   
                <div className='podcast-right-side'>
