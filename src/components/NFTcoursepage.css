@@ -1,0 +1,42 @@
+.whole-arrow-container{
+    display: flex;
+    padding-left: 10px;
+}
+.whole-arrow-container h1{
+    font-size: 40px;
+    line-height: 48.41px;
+    font-weight: 700;
+}
+.content-whole-container{
+    display: flex;
+    flex-wrap: wrap;    
+}
+.course-left-container {
+    overflow-y: auto; 
+    max-height: 300px; 
+    padding-right: 10px;
+}
+.course-left-container{
+
+    background-color: #F8F8F8;
+    width: 18%;
+    padding-left: 30px;
+    margin-left: 30px;
+    height: 23rem;
+    max-height: 23rem;
+
+}
+.course-right-container{
+    flex: 2;
+    padding-left: 16px;
+}
+.course-right-container-2 h2{
+    font-size: 28px;
+}
+.content-tabs a{
+    text-decoration: none;
+    color: #000000;
+}
+.content-tabs{
+    padding-top: 30px;
+}

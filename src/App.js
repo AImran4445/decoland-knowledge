@@ -9,6 +9,8 @@ import { useLocation } from "react-router-dom";
 import Articlepage from './components/Articlepage';
 import FillForm from './components/FillForm';
 import Podcasts from './components/Podcasts';
+import Learn from './components/Learn';
+import NFTcoursepage from './components/NFTcoursepage';
 
 
 function App() {
@@ -22,11 +24,12 @@ function App() {
     <Routes>
           <Route path='/' element = {<Homepage />} />
           <Route path="/mission" element={<Ourmission />} />
-          <Route path="/Knowledgeplatform" element={<Knowledgeplatform />} />
+          <Route path="/knowledgeplatform" element={<Knowledgeplatform />} />
           <Route path='/articlepage' element = {<Articlepage/>}/>
           <Route path='/podcasts' element ={<Podcasts/>}/>
           <Route path='/form' element = {<FillForm/>}/>
-        
+          <Route path='/learn' element = {<Learn/>}/>
+          <Route path='/nftcoursepage' element = {<NFTcoursepage/>} />
      </Routes>
     </>
   );

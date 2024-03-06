@@ -6,6 +6,7 @@ import Arrowback from '../assets/arrow-back.png';
 import './Articlepage.css';
 import Article from '../assets/ticle.png';
 
+
 function Articlepage() {
   return (
     <>
@@ -13,7 +14,7 @@ function Articlepage() {
       <div className='content'>
       <div className='article-whole-container'>
         <div className='article-container'>
-            <div className='article-1st-container'>
+              <div className='article-1st-container'>
                <div className='article-left-side'>
                   <div className='article-left-inner-1'>
                     <Link to='/knowledgeplatform'>

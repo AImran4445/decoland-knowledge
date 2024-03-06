@@ -11,6 +11,11 @@
     width: 85%;
     padding: 15px;
 }
+.paragraph p{
+    font-size: 24px;
+    line-height: 29.05px;
+    font-weight: 400;
+}
 
 .second-container {
     background-color: #f5f5f5;
@@ -38,7 +43,9 @@
 }
 
 .form-2nd-container h2 {
-    font-size: 28px;
+    font-size: 46px;
+    line-height: 55.6px;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -68,9 +75,13 @@
     padding: 0.7rem 1rem;
     display: block;
     transition: all 0.3s;
-    border: 1px solid #000000;
+    border: 0.5px solid #000000;
     background-color: #ffffff;
     border-radius: 7px;
+    
+}
+.input-1::placeholder{
+    color: #e5e5e5;
 }
 
 .form-input-container-1 {

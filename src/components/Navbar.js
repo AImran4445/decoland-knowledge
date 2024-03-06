@@ -7,11 +7,9 @@ import "./Navbar.css";
 
 const Navbar = () => {
  const [showMenu, setShowMenu] = useState(false);
-
  const toggleMenu = () => {
    setShowMenu(!showMenu);
  };
-
   const closeMenuOnMobile = () => {
     if (window.innerWidth <= 1150) {
       setShowMenu(false);
@@ -50,7 +48,6 @@ const Navbar = () => {
            <Link to="/knowledgeplatform" className="nav__link">
             Knowledge Platform
             </Link>
-
            </li>
            <li className="nav__item">
              <NavLink
@@ -63,7 +60,6 @@ const Navbar = () => {
            </li>
          </ul>
        </div>
-
        <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
          <IoMenu />
        </div>

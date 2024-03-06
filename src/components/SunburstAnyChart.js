@@ -1,5 +1,4 @@
 import React from "react";
-
 import AnyChart from "anychart-react";
 import anychart from "anychart";
 import "./style.css";
@@ -344,29 +343,15 @@ class SunburstAnyChart extends React.Component {
 
     // set calculation mode
     chart.calculationMode("parent-independent");
-
-    // set chart title
     chart.title("Europe Population");
-
-    // set custom palette
     chart.palette(["#0288d1", "#d4e157", "#ff6e40", "#f8bbd0"]);
-
-    // format chart labels
     chart.labels().format("{%Name}\n{%Value}{scale:(1000000)(1)|( mln)}");
-
-    // format chart tooltip
     chart.tooltip().format("Population: {%Value}{scale:(1000000)(1)|( mln)}");
-
-    // the fill specified in the data has priority
-    // set point fill
     chart.fill(function() {
       return anychart.color.darken(this.parentColor, 0.15);
     });
 
-    // set container id for the chart
     chart.container("container");
-
-    // initiate chart drawing
     this.state = {
       chart: chart.draw()
     };

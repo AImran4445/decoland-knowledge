@@ -21,7 +21,7 @@ function KnowledgeplatformDiscover() {
         Blockchain enables tracking and tracing of goods and materials throughout the supply chain, ensuring ethical sourcing, fair labor practices, and environmental sustainability. Blockchain-based voting systems can enhance the integrity ....
         </p>
         <p className='read-button'>Read more</p>
-        <div className="toggle-switch">
+        {/* <div className="toggle-switch">
             <input type="checkbox" className="toggle-switch-checkbox" id="toggleSwitch" />
             <label className="toggle-switch-label" htmlFor="toggleSwitch">
                 <span className="toggle-switch-inner">
@@ -30,7 +30,29 @@ function KnowledgeplatformDiscover() {
                 </span>
                 <span className="toggle-switch-switch"></span>
             </label>
-        </div>
+        </div> */}
+        <div className='discover-3rd-container'>
+              <div className='option-3rd-contianer'>
+              <div class="options">
+                <div class="option">
+                  <input type="checkbox" id="ali" name="choice"/>
+                  <label for="ali">Articles</label>
+                </div>
+                <div class="option">
+                  <input type="checkbox" id="imran" name="choice"/>
+                  <label for="imran">Case Studies</label>
+                </div>
+                <div class="option">
+                  <input type="checkbox" id="zain" name="choice"/>
+                  <label for="zain">Briefs</label>
+                </div>
+                <div class="option">
+                  <input type="checkbox" id="salman" name="choice"/>
+                  <label for="salman">Media</label>
+                </div>
+              </div>
+              </div>
+            </div>
         <div className='articles'>
             <h2 className='article-heading'> Articles </h2>
             <div className='article-1'>

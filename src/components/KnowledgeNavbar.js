@@ -28,7 +28,7 @@ function KnowledgeNavbar() {
           >
             <ul className="nav__list">
               <li className="nav__item">
-                <Link to="/Knowledgeplatform" className="nav__link" >
+                <Link to="/knowledgeplatform" className="nav__link" >
                  Discover
                 </Link>
               </li>
