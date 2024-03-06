@@ -16,7 +16,6 @@
 
 .podcast-1st-container {
   display: flex;
-  flex-wrap: wrap;
   position: relative;
   background-color: #000000;
 }
@@ -25,7 +24,9 @@
   position: absolute;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   height: 100%;
+  width: calc(100% - 100px);
   padding: 0 50px;
 }
 
@@ -81,6 +82,23 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  height: 80%;
+}
+
+.podcast-left-inner-4 button {
+  background-color: #fff;
+  color: #000;
+  border-radius: 6px;
+  padding: 10px 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .3s;
+  border: 1px solid #fff;
+}
+
+.podcast-left-inner-4 button:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .arrow-back {
