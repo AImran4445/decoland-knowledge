@@ -1,4 +1,4 @@
-.header {
+/* .header {
     position: fixed;
     width: 85%;
     top: 0;
@@ -50,16 +50,16 @@
 
    .nav__list {
     display: flex;
-    flex-direction: row; /* Change to row */
-    gap: 2.5rem; /* Use 'gap' for spacing between items */
-    list-style: none; /* Remove bullet points */
+    flex-direction: row; 
+    gap: 2.5rem; 
+    list-style: none; 
   }
   
   .nav__item {
-    position: relative; /* For positioning */
+    position: relative; 
   }
-  
-  .nav__link {
+   */
+  /* .nav__link {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
     transition: color 0.4s;
@@ -119,3 +119,36 @@
       column-gap: 1.5rem;
     }
    }
+    */
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 155px; /* Adjust width as needed */
+      background-color: white;
+      border: 1px solid #ccc; /* Add border if needed */
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+      z-index: 1000; /* Ensure dropdown is on top of other content */
+      padding: 0;
+      font-size: 14px;
+      list-style: none;
+    }
+    
+    .dropdown-item {
+      padding: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .dropdown-item:hover {
+      background-color: #f0f0f0; /* Change background color on hover */
+    }
+    
+    /* Additional styling for links inside dropdown items */
+    .dropdown-item a {
+      text-decoration: none;
+      color: black;
+    }
+    

@@ -51,27 +51,28 @@
 
    .nav__list {
     display: flex;
-    flex-direction: row; /* Change to row */
-    gap: 2.5rem; /* Use 'gap' for spacing between items */
-    list-style: none; /* Remove bullet points */
+    flex-direction: row;
+    gap: 2.5rem; 
+    list-style: none; 
   }
   
   .nav__item {
-    position: relative; /* For positioning */
+    position: relative;
   }
   
   .nav__link {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
     transition: color 0.4s;
-    text-decoration: none; /* Remove underline */
-    padding: 10px; /* Add padding for spacing */
+    text-decoration: none; 
+    padding: 22px;
     text-decoration: none;
     padding-bottom: 1px;
     background: none;
     color: rgba(0, 0, 0, 1);
     font-size: 20px;
     font-weight: 500;
+    cursor: pointer;
   }
   
   
@@ -80,8 +81,6 @@
     text-decoration:dashed;
    
   }
-  
-   
    .nav__close {
     position: absolute;
     top: 1rem;

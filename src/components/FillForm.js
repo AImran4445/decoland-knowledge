@@ -8,7 +8,7 @@ function FillForm() {
   return (
     <>
     <KnowledgeNavbar/>
-    <div className='content'>
+    <div className='form-content'>
       <div className='form-whole-container'>
         <div className='form-container'>
           <div className='second-container'> 
@@ -62,9 +62,9 @@ function FillForm() {
             </div>
         </div>
       </div>
-      <div className='last-container'>
-        
-      </div>
+          <div className='footer'>
+              
+          </div>
       </div>
     </>
   )

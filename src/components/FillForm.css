@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
 }
+.form-content{
+    padding-top: 10%;
+}
 
 .form-container {
     border: 1px solid #000000;

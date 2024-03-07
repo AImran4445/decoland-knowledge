@@ -14,7 +14,7 @@ function Learn() {
   return (
     <>
     <KnowledgeNavbar/>
-    <div className='content'>
+    <div className='learn-content'>
     <div className='learn-whole-container'>
         <div className='learn-container'>
            <h1>Welcome to our blockchain Learning Hub</h1>
@@ -93,6 +93,9 @@ function Learn() {
             </div>
         </div>
      </div>
+          <div className='footer'>
+              
+              </div>
     </div>
     </>
   )

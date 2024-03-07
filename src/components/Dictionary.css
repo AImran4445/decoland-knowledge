@@ -1,0 +1,16 @@
+.dictioanry-content{
+    padding-top: 10%;
+}
+
+.decoland-section1-whole-container{
+    width: 95%;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+  }
+.decoland-heading{
+      padding: 10px 34px;
+  }
+.dictionary-whole-container{
+    display: flex;
+    justify-content: center;
+  }

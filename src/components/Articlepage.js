@@ -11,7 +11,7 @@ function Articlepage() {
   return (
     <>
       <KnowledgeNavbar/>
-      <div className='content'>
+      <div className='article-content'>
       <div className='article-whole-container'>
         <div className='article-container'>
               <div className='article-1st-container'>
@@ -58,6 +58,9 @@ function Articlepage() {
             </div>
         </div>
       </div>
+            <div className='footer'>
+              
+            </div>
       </div>
     </>
   )

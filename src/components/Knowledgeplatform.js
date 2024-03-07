@@ -7,7 +7,7 @@ function Knowledgeplatform() {
   return (
     <>
     <KnowledgeNavbar />
-    <div className='content'>
+    <div className='discover-content'>
       <KnowledgeplatformDiscover/>
     </div>
     </>

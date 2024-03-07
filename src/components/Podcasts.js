@@ -10,7 +10,7 @@ function Podcasts() {
   return (
    <>
      <KnowledgeNavbar/>
-     <div className='content'>
+     <div className='podcast-content'>
       <div className='podcast-whole-container'>
         <div className='podcast-container'>
                   <div className='podcast-left-inner-1'>
@@ -32,7 +32,9 @@ function Podcasts() {
                     </div>
                   </div>
                   <div className='podcast-left-inner-4'>
+                    <Link to='/form'>
                     <button>Download</button>
+                    </Link>
                   </div>
                </div>   
                <div className='podcast-right-side'>
@@ -75,8 +77,12 @@ function Podcasts() {
                 Yeah, just really living a life and growing up, seeing the value of these relationships being built in these unexpected ways. And so that took, that, yeah, that is the  foundational curiosity, I think, that leads me to do the work it is, that we do at New_ Public, but along the way, you know, when it really comes to this work as a community organizer. And so started my career really thinking about how markets could serve the poor in the developing world better than aid and really then began to see the limits of the markets to address some of these kind of systemic power challenges that these, that all democracies, really, face and led me to take some time to think about that at grad school with Marshall Ganz. And I really found that the community organizing model answered a lot of these questions around how power can be distributed in a more equitable way and how voice can be, yeah, voice can really, how you create those right environments and containers for voice to really, of the most marginalized, to really have a stronger sense of its power. Um, and so, yeah, anyways, went back to India to create , which was a community organizing platform that brought the rich and the poor together. For, you know, I don't know if you've been to India or not, but the rich literally live on top of the poor as opposed to how we live here in kind of more gentrified horizontal ways. And so the idea was, um, our democracy in India could only be successful if we began to see each other in one another and, and, you know, the rich can't, it was, well, it wasn't going to be successful if the rich continue to kind of privatize and pull themselves out of the core things that is that require society to function. And so we took the energy around safety and particularly women's safety in 2012 after this very famous Nirbhaya rape case which you may or may not remember, to kind of galvanize the energy of the populace whether you are rich or poor to kind of work together on improving safety in your neighborhood that evolved into a whole bunch of sanitation campaigns where ordinary citizens would kind of work together with their local government. 
               </p>
             </div>
+            
         </div>
       </div>
+           <div className='footer'>
+              
+            </div>
       </div>
    </>
   )

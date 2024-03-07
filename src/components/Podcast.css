@@ -1,8 +1,9 @@
 .podcast-whole-container {
   display: flex;
   justify-content: center;
-
-
+}
+.podcast-content{
+  padding-top: 10%;
 }
 
 .podcast-container {
@@ -31,7 +32,7 @@
 }
 
 .pause-button img {
-  width: 90px;
+  width: 70px;
   display: flex;
   align-items: center;
 }
@@ -75,7 +76,7 @@
 }
 
 .podcast-left-inner-3 {
-  padding-left: 20px;
+  width: 48rem;
 }
 
 .podcast-left-inner-4 {
@@ -102,17 +103,15 @@
 }
 
 .arrow-back {
-  width: 50px;
+  width: 45px;
   margin: 20px;
 }
-
 .podcast-word {
   width: 28%;
   padding-top: 14px;
 }
-
 .podcast-2-container p {
-  padding-left: 24px;
+  padding-left: 12px;
   padding-right: 12px;
   line-height: 30px;
   text-align: justify;
@@ -128,11 +127,9 @@
   display: flex;
   justify-content: center;
 }
-
 .podcast-left-inner-4 a {
   text-decoration: none;
 }
-
 .podcast-left-inner-5 span {
   font-weight: bold;
   font-size: 14px;
@@ -158,7 +155,6 @@
   background-color: #ccc;
   cursor: pointer;
 }
-
 .podcast-switch-inner {
   display: flex;
   width: 100%;
@@ -171,7 +167,6 @@
   z-index: 1;
   position: relative;
 }
-
 .podcast-switch-text {
   color: #fff;
   font-size: 16px;
@@ -180,14 +175,12 @@
 }
 
 .podcast-middle-container {
-  padding-left: 20px;
-}
-
-.podcast-left-inner-5 {
-  padding-top: 18px;
   padding-left: 10px;
 }
-
+.podcast-left-inner-5 {
+  padding-top: 18px;
+  padding-left: 2px;
+}
 .podcast-switch-switch {
   display: block;
   position: absolute;
@@ -202,8 +195,11 @@
   transition: transform 0.3s ease;
 }
 
-
 .podcast-switch-checkbox:checked+.podcast-switch-label .podcast-switch-switch {
   transform: translateX(calc(100% - 6px));
-  /* Adjust based on the width of the switch */
+  
+}
+.footer{
+  padding: 30px;
+  background-color: #ffffff;
 }

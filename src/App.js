@@ -11,13 +11,14 @@ import FillForm from './components/FillForm';
 import Podcasts from './components/Podcasts';
 import Learn from './components/Learn';
 import NFTcoursepage from './components/NFTcoursepage';
+import DecolandResources from './components/DecolandResources';
+import Dictionary from './components/Dictionary';
 
 
 function App() {
   const location = useLocation();
   const showNavbarAndFooter =
   location.pathname === "/" ;
-
   return (
     <>
     {showNavbarAndFooter && <Navbar />}
@@ -29,7 +30,9 @@ function App() {
           <Route path='/podcasts' element ={<Podcasts/>}/>
           <Route path='/form' element = {<FillForm/>}/>
           <Route path='/learn' element = {<Learn/>}/>
+          <Route path='/resources' element = {<DecolandResources/>}/>
           <Route path='/nftcoursepage' element = {<NFTcoursepage/>} />
+          <Route path='/dictionary' element={<Dictionary/>} />
      </Routes>
     </>
   );
