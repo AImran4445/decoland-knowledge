@@ -46,9 +46,12 @@
 .decoland-wrapper{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     width: 95%;
     padding-left: 32px;
+    gap: 30px;
+    padding-top: 20px;
+
 }
 .deco-arrow{
     display: flex;
@@ -67,7 +70,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 30px auto;
+   
 }
 .resources-card .resource-card-img{
     width: 268px;

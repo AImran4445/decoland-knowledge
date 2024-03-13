@@ -12,3 +12,6 @@ root.render(
   </Router>
 );
 reportWebVitals();
+
+//doing this after the details
+

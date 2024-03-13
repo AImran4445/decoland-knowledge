@@ -6,7 +6,7 @@ import "./style.css";
 var data = [
   {
     id: "eu",
-    name: "Europe",
+    name: "Blockchain",
     fill: "#fff",
     label: {
       fontColor: "#2a333d",
@@ -336,12 +336,9 @@ var data = [
 class SunburstAnyChart extends React.Component {
   constructor() {
     super();
-    // makes tree from the data for the sample
     let dataTree = anychart.data.tree(data, "as-table");
-
     let chart = anychart.sunburst(dataTree);
 
-    // set calculation mode
     chart.calculationMode("parent-independent");
     chart.title("Europe Population");
     chart.palette(["#0288d1", "#d4e157", "#ff6e40", "#f8bbd0"]);
