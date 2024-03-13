@@ -22,7 +22,7 @@ function Articlepage() {
                     </Link>
                   </div>
                   <div className='article-left-inner-2'>
-                     <img className='article-word' src={Article} alt='no-image' />
+                     <img className='article-word' src={Article} alt='no-img' />
                   </div>
                   <div className='article-left-inner-3'>
                     <h2> Enhancing User Experience in NFT Marketplaces </h2>
@@ -39,7 +39,7 @@ function Articlepage() {
                   </div>
                </div>   
                <div className='article-right-side'>
-                 <img className='right-side-image' src={NFTImage} alt='no-image' />
+                 <img className='right-side-image' src={NFTImage} alt='no-img' />
                </div> 
             </div>
             <div className='article-2-container'>

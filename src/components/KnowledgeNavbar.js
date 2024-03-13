@@ -7,21 +7,12 @@ import './KnowledgeNavbar.css';
 function KnowledgeNavbar() {
   const [showMenu, setShowMenu] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
-
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
-
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
   };
-
-  const closeMenuOnMobile = () => {
-    if (window.innerWidth <= 1150) {
-      setShowMenu(false);
-    }
-  };
-
   return (
     <header className="header">
       <nav className="nav container">
@@ -32,7 +23,7 @@ function KnowledgeNavbar() {
           <ul className="nav__list">
             <li className="nav__item">
               <Link to="/knowledgeplatform" className="nav__link">
-                Discover
+                Discover 
               </Link>
             </li>
             <li className="nav__item">
@@ -49,11 +40,6 @@ function KnowledgeNavbar() {
                   <li className="dropdown-item">
                     <Link to="/resources" className="dropdown-link">
                       Decoland Resources
-                    </Link>
-                  </li>
-                  <li className="dropdown-item">
-                    <Link to="/dictionary" className="dropdown-link">
-                      Crypto Dictionary
                     </Link>
                   </li>
                 </ul>

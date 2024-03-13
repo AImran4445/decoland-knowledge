@@ -62,6 +62,7 @@ import Topic1 from './NFTcourse/Topic1';
 import Topic2 from './NFTcourse/Topic2';
 import Topic3 from './NFTcourse/Topic3';
 
+
 function NFTcoursepage() {
     const [currentTopic, setCurrentTopic] = useState('Topic1'); 
     const handleTopicClick = (topic) => {

@@ -1,97 +1,103 @@
-import React from 'react';
-import { useState } from 'react';
-import KnowledgeNavbar from './KnowledgeNavbar'
+import React, { useState } from 'react';
+import KnowledgeNavbar from './KnowledgeNavbar';
 import './DecolandResources.css';
+import AllResources from './DecolandResources/AllResources';
+import Infographics from './DecolandResources/Infographics';
 import { Link } from 'react-router-dom';
-import Blogs from './DecolandResources/Blogs';
-import OnePagers from './DecolandResources/OnePagers';
-import Articles from './DecolandResources/Articles';
-import PodcastsVideos from './DecolandResources/PodcastsVideos';
-
+import HowTo from './DecolandResources/HowTo';
+import Presentations from './DecolandResources/Presentations';
+import Papers from './DecolandResources/Papers';
+import { IoNewspaper } from 'react-icons/io5';
 
 function DecolandResources() {
-    const [currentTabs, setCurrentTabs] = useState('blogs','pagers','podcast','articles'); 
-    const handleTabsClick = (tabs) => {
-        setCurrentTabs(tabs);
+    const [currentTab, setCurrentTab] = useState('All');
+    const [lastSelectedTab, setLastSelectedTab] = useState('All');
+    const renderTabContent = () => {
+        switch (currentTab) {
+            case 'All':
+                return <AllResources />;
+            case 'Infographics':
+                return <Infographics />;
+            case 'How-To':
+                return <HowTo />;
+            case 'Presentations':
+                return <Presentations />;
+            case 'Papers':
+                return <Papers />;
+            default:
+                return null;
+        }
     };
-  return (
-    <>
-        <KnowledgeNavbar/>
-        <div className='decoland-resources-content'>
-            <div className='decoland-whole-container'>
-               <div className='decoland-section1-whole-container'>
-                 <div className='decoland-section1-container'>
-                    <div className='decoland-heading'>
-                        <h1> Decoland Resources </h1>
+    const handleTabsClick = (tab) => {
+        setLastSelectedTab(currentTab); 
+        setCurrentTab(tab);
+    };
+    return (
+        <>
+            <KnowledgeNavbar />
+            <div className='decoland-resources-content'>
+                <div className='decoland-whole-container'>
+                    <div className='decoland-section1-whole-container'>
+                        <div className='decoland-section1-container'>
+                            <div className='decoland-heading'>
+                                <h1> Decoland Resources </h1>
+                            </div>
+                        </div>
+                        <div className='decoland-tabs-container'>
+                            <ul className="nav__list decoland-resource-ul">
+                                <li className="nav__item">
+                                    <Link
+                                        className={`nav__link decoland-link ${currentTab === 'All' ? 'bold' : ''}`}
+                                        onClick={() => handleTabsClick('All')}
+                                    >
+                                        All
+                                    </Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link
+                                        className={`nav__link decoland-link ${currentTab === 'Infographics' ? 'bold' : ''}`}
+                                        onClick={() => handleTabsClick('Infographics')}
+                                    >
+                                        Infographics
+                                    </Link>
+                                </li>
+                                {/* Add buttons for other tabs */}
+                                <li className="nav__item">
+                                    <Link
+                                        className={`nav__link decoland-link ${currentTab === 'How-To' ? 'bold' : ''}`}
+                                        onClick={() => handleTabsClick('How-To')}
+                                    >
+                                        How-To
+                                    </Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link
+                                        className={`nav__link decoland-link ${currentTab === 'Presentations' ? 'bold' : ''}`}
+                                        onClick={() => handleTabsClick('Presentations')}
+                                    >
+                                        Presentations
+                                    </Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link
+                                        className={`nav__link decoland-link ${currentTab === 'Papers' ? 'bold' : ''}`}
+                                        onClick={() => handleTabsClick('Papers')}
+                                    >
+                                        Papers
+                                    </Link>
+                                </li>
+                                {/* Add buttons for other tabs */}
+                            </ul>
+                        </div>
                     </div>
-                    {/* <div className='decoland-search-container'>
-                        <input type='text' placeholder='search'/>
-                    </div> */}
-                 </div>
-                 <div className='decoland-tabs-container'>
-                    <ul className="nav__list decoland-resource-ul">
-                        <li className="nav__item">
-                            <Link  className={`nav__link decoland-link ${currentTabs === 'blogs' ? 'bold' : ''}`} href='#' onClick={() => handleTabsClick('blogs')}>
-                            Infographics
-                            </Link>
-                        </li>
-                        <li className="nav__item">
-                            <Link  className={`nav__link decoland-link ${currentTabs === 'pagers' ? 'bold' : ''}`} href='#' onClick={() => handleTabsClick('pagers')} >
-                            How-To
-                            </Link>
-                        </li>
-                        <li className="nav__item">
-                            <Link
-                            className={`nav__link decoland-link ${currentTabs === 'articles' ? 'bold' : ''}`} href='#' onClick={() => handleTabsClick('articles')}
-                            >
-                            Presentations
-                            </Link>
-                        </li>
-                        <li className="nav__item">
-                        <Link className={`nav__link decoland-link ${currentTabs === 'podcast' ? 'bold' : ''}`} href='#' onClick={() => handleTabsClick('podcast')}>
-                            Papers
-                        </Link>
-                        </li>
-                    </ul>
-                 </div>
-               </div>
-               <div className='decoland-section2-container'>
-                  <div className='decoland-section2-heading'>
-                     <h2>BLOG</h2>
-                  </div>
                 </div>
-                  <Blogs/>
-                <div className='decoland-section3-container'>
-                  <div className='decoland-section3-heading'>
-                     <h2>ONE PAGERS</h2>
-                  </div>
+                {renderTabContent()}
+                <div className='footer'>
+                    {/* Footer content */}
                 </div>
-                 <OnePagers/>
-                <div className='decoland-section4-container'>
-                  <div className='decoland-section4-heading'>
-                     <h2>ARTICLES</h2>
-                  </div>
-                </div>
-                 <Articles/>
-                <div className='decoland-section5-container'>
-                  <div className='decoland-section5-heading'>
-                     <h2>PODCASTS/VIDEOS</h2>
-                  </div>
-                </div>
-               <PodcastsVideos/>
             </div>
-            {/* <div>
-             { currentTabs === 'blogs' && <Blogs/>}
-             { currentTabs === 'pagers' && <OnePagers/>}
-             { currentTabs === 'articles' && <Articles/>}
-             { currentTabs === 'podcast' && <PodcastsVideos/>}
-             </div> */}
-            <div className='footer'>
-            </div>
-        </div>
-    </>
-  )
+        </>
+    );
 }
 
-export default DecolandResources
-
+export default DecolandResources;

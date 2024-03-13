@@ -23,7 +23,7 @@ function Topic1() {
              {showPopup && (
                <div className='popup'>
                   <div className='popup-container'>
-                         <div className='cross-download-button'>
+                         <div className='popup-cross-download-button'>
                                 <button className='download-popup'><img src={DownloadpopupImage} alt='no img' /></button>
                                 <button className='cross-button' onClick={togglePopup}> <img src={CrosspopupImage} alt='no img' /></button>
                           </div>

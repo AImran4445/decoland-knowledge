@@ -3,7 +3,6 @@ import KnowledgeNavbar from './KnowledgeNavbar'
 import { Link } from 'react-router-dom';
 import Arrowback from '../assets/arrow-back.png';
 import './FillForm.css';
-
 function FillForm() {
   return (
     <>
@@ -13,12 +12,12 @@ function FillForm() {
         <div className='form-container'>
           <div className='second-container'> 
             <div className='form-1st-container'>
-                    <Link to='/knowledgeplatform'>
-                      <img className='form-arrow-back' src={Arrowback} alt='no-arrow-back' />
-                    </Link>
+                <Link to='/knowledgeplatform'>
+                    <img className='form-arrow-back' src={Arrowback} alt='no-arrow-back' />
+                </Link>
             </div>
             <div className='form-2nd-container'>
-              <h2> Get the Report Now </h2> 
+              <h2>Get the Report Now </h2> 
               <div className='paragraph'>
               <p>Download your free copy of the 2024 Crypto Market Outlook for NonProfits report</p>
             </div>
@@ -38,19 +37,19 @@ function FillForm() {
               <div class="options">
                 <div class="option">
                   <input type="checkbox" id="ali" name="choice"/>
-                  <label for="ali">Announcements</label>
+                  <label for="announcecments">Announcements</label>
                 </div>
                 <div class="option">
                   <input type="checkbox" id="imran" name="choice"/>
-                  <label for="imran">Media</label>
+                  <label for="media">Media</label>
                 </div>
                 <div class="option">
                   <input type="checkbox" id="zain" name="choice"/>
-                  <label for="zain">Donor</label>
+                  <label for="donor">Donor</label>
                 </div>
                 <div class="option">
                   <input type="checkbox" id="salman" name="choice"/>
-                  <label for="salman">Other</label>
+                  <label for="other">Other</label>
                 </div>
               </div>
               </div>
@@ -63,7 +62,6 @@ function FillForm() {
         </div>
       </div>
           <div className='footer'>
-              
           </div>
       </div>
     </>

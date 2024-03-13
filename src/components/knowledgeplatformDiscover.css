@@ -1,199 +1,199 @@
 .main-container {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap;
-    width: 94%;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .left-container {
-    flex: 1;
-    padding-right: 20px; /* Add some space between left and right containers */
-  }
-  
-  .right-container {
-    flex: 1;
-  }
-  
-  .graph-heading {
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .content-side {
-    margin-top: 0;
-    font-size: 38px;
-    line-height: 43.67px;
-  }
-  
-  .dummy-graph {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px; /* Adjust height according to your needs */
-  }
-  
-  .content-paragraph {
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: justify;
-    width: 90%;
-  }
-  
-  .read-button {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  /* Toggle Switch Styles */
-  /* Toggle Switch Styles */
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  width: 94%;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: center;
+}
+
+.left-container {
+  flex: 1;
+  padding-right: 20px; /* Add some space between left and right containers */
+  position: sticky;
+  top: 0;
+}
+
+.right-container {
+  flex: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: 100vh; /* Limit height to viewport height */
+}
+
+.graph-heading {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.content-side {
+  margin-top: 0;
+  font-size: 38px;
+  line-height: 43.67px;
+}
+
+.dummy-graph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust height according to your needs */
+}
+
+.content-paragraph {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+  width: 90%;
+}
+
+.read-button {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .toggle-switch {
-    display: inline-block;
-    margin-top: 10px;
-    width: 100%;
-  }
-  
-  .toggle-switch-checkbox {
-    display: none;
-  }
-  
-  .toggle-switch-label {
-    display: block;
-    position: relative;
-    width: 92%; /* Adjust width to fit the labels */
-    height: 34px;
-    border-radius: 34px;
-    background-color: #ccc;
-    cursor: pointer;
-  }
-  
-  .toggle-switch-inner {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-    box-sizing: border-box;
-    transition: background-color 0.3s ease;
-    z-index: 1;
-    position: relative;
-  }
-  
-  .toggle-switch-text {
-    color: #fff;
-    font-size: 14px;
-    width: 50%;
-    text-align: center;
-  }
-  
-  .toggle-switch-switch {
-    display: block;
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 50%; /* Adjust width to fit the labels */
-    height: 28px;
-    border-radius: 20px;
-    background-color: #000;
-    z-index: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-  }
-  
-  
-  .toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
-    transform: translateX(calc(100% - 6px)); /* Adjust based on the width of the switch */
-  }
-  .article-heading{
-    color: #D9D9D9;
-    font-size: 30px;
-    line-height: 55px;
-  }
-  .article-1
-  {
-    width: 78%;
-    height: 2%;
-    border-radius: 10px;
-  }
-  .card {
-    width: 120%;
-    background-color: #fff;
-    margin: 20px auto;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex; /* Use flexbox for layout */
-    border: 1.5px solid #E3E3E3;
+  display: inline-block;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.toggle-switch-checkbox {
+  display: none;
+}
+
+.toggle-switch-label {
+  display: block;
+  position: relative;
+  width: 92%; /* Adjust width to fit the labels */
+  height: 34px;
+  border-radius: 34px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.toggle-switch-inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.toggle-switch-text {
+  color: #fff;
+  font-size: 14px;
+  width: 50%;
+  text-align: center;
+}
+
+.toggle-switch-switch {
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 50%; /* Adjust width to fit the labels */
+  height: 28px;
+  border-radius: 20px;
+  background-color: #000;
+  z-index: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
+  transform: translateX(calc(100% - 6px)); /* Adjust based on the width of the switch */
+}
+.article-heading{
+  color: #D9D9D9;
+  font-size: 30px;
+  line-height: 55px;
+}
+.article-1
+{
+  width: 78%;
+  height: 2%;
+  border-radius: 10px;
+}
+.card {
+  width: 120%;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex; /* Use flexbox for layout */
+  border: 1.5px solid #E3E3E3;
 }
 
 .card-image {
-  padding: 5px;
+padding: 5px;
 }
 
 .card-image img {
-    width: 90%;
-    height: auto;
+  width: 90%;
+  height: auto;
 }
 
 .card-content {
-    flex: 1; 
-    padding: 5px 3px;
+  flex: 1; 
+  padding: 5px 3px;
 }
 
 .card-content h2 {
-    font-size: 18px;
-    margin-top: 0;
+  font-size: 18px;
+  margin-top: 0;
 }
 .discover-3rd-container {
-  padding: 20px;
-  width: calc(94% - 40px);
-  padding-bottom: 15px;
-  background-color: #D9D9D9;
-  color: #000000;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  font-size: 18px;
-  line-height: 21.78px;
+padding: 20px;
+width: calc(94% - 40px);
+padding-bottom: 15px;
+background-color: #D9D9D9;
+color: #000000;
+border-radius: 8px;
+margin-bottom: 20px;
+font-size: 18px;
+line-height: 21.78px;
 }
 
 .card-content p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 .arrow{
-    padding-bottom: 9px; 
-    width: 8%;
-    display: flex;
-    float: right;
-    padding-right: 20px;
+  padding-bottom: 9px; 
+  width: 8%;
+  display: flex;
+  float: right;
+  padding-right: 20px;
 }
 input[type="checkbox" i] {
-  background-color: initial;
-  cursor: default;
-  appearance: auto;
-  box-sizing: border-box;
-  margin: 1px 15px 4px 8px;
-  padding: initial;
-  border: initial;
+background-color: initial;
+cursor: default;
+appearance: auto;
+box-sizing: border-box;
+margin: 1px 15px 4px 8px;
+padding: initial;
+border: initial;
 }
-
-  

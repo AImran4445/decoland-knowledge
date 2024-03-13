@@ -47,7 +47,7 @@
 
 .form-2nd-container h2 {
     font-size: 46px;
-    line-height: 55.6px;
+    line-height: 55.67px;
     font-weight: 700;
     margin: 0;
 }
@@ -69,6 +69,7 @@
 .options {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .input-1 {

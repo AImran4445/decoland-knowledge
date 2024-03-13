@@ -41,13 +41,14 @@
     font-size: 12px;
 }
 .blogs-list{
-    padding-top: 10px;
+    padding-top: 20px;
 }
 .decoland-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    width: 95%;
+    padding-left: 32px;
 }
 .deco-arrow{
     display: flex;
@@ -66,11 +67,17 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 30px auto;
 }
 .resources-card .resource-card-img{
     width: 268px;
     padding: 20px;
 }
+.resources-card .resource-card-pdf{
+    width: 209px;
+    padding: 20px;
+}
+
 .resources-card .container #name{
     font-size: 16px;
 }
@@ -99,6 +106,7 @@
     font-size: 12px;
 }
 .decoland-section5-container{
+
     display: flex;
     width: 95%;
     justify-content: center;
@@ -111,14 +119,38 @@
     font-size: 12px;
 }
 .resource-download{
-    border-radius: 10px;
+    border-radius: 4px;
     display: flex;
-    margin-right: 10px;
-    margin-bottom: 10px;
     background-color: #000000;
     color: #ffffff;
-    padding: 4px 14px;
     border: none;
-    float: right;
+    cursor: pointer;
+    padding: 10px 103px;
+    text-decoration: none;
 }
-    
+.card-tag{
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    background-color: #00FF00;
+    padding: 3px 16px;
+    border-radius: 4px;
+    margin: 8px auto;
+}
+.resources-card #container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+   
+}
+.resources-card #container a{
+    text-decoration: none;
+}
+.bold{
+    font-weight: bold;
+    text-decoration: underline;
+}
+#container p{
+    width: 95%;
+}
