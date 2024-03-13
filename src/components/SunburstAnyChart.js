@@ -16,320 +16,88 @@ var data = [
   {
     id: "2.15",
     parent: "eu",
-    name: "Eastern Europe",
-    fill: "#f06362"
+    name: "Blockchain use cases by Civil Society",
+    fill: "#C485FF"
   },
   {
     id: "3.162",
     parent: "2.15",
-    name: "Russia",
+    name: "Fundraising",
+    fill:"#C485FF",
     value: 143989754
   },
   {
     id: "3.163",
     parent: "2.15",
-    name: "Ukraine",
+    name: " Digital identity",
+    fill:"#DDB9FF",
     value: 44222947
   },
   {
     id: "3.164",
     parent: "2.15",
-    name: "Poland",
+    name: "Corruption",
+    fill:"#DDB9FF",
     value: 38170712
   },
-  {
-    id: "3.165",
-    parent: "2.15",
-    name: "Romania",
-    value: 19679306
-  },
-  {
-    id: "3.166",
-    parent: "2.15",
-    name: "Czechia",
-    value: 10618303
-  },
-  {
-    id: "3.167",
-    parent: "2.15",
-    name: "Hungary",
-    value: 9721559
-  },
-  {
-    id: "3.168",
-    parent: "2.15",
-    name: "Belarus",
-    value: 9468338
-  },
-  {
-    id: "3.169",
-    parent: "2.15",
-    name: "Bulgaria",
-    value: 7084571
-  },
-  {
-    id: "3.170",
-    parent: "2.15",
-    name: "Slovakia",
-    value: 5447662
-  },
-  {
-    id: "3.171",
-    parent: "2.15",
-    name: "Moldova",
-    value: 4051212
-  },
-  {
-    id: "3.172",
-    parent: "2.15",
-    name: "Cyprus",
-    value: 1179551
-  },
+  
   {
     id: "2.16",
     parent: "eu",
-    name: "Northern Europe",
-    fill: "#43c5f1"
+    name: " Blockchain for social impact",
+    fill: "#CA498C",
+    value: 143989754,
+    label: {
+      fontWeight: "bold",
+      fontSize:"36px"
+    }
   },
   {
     id: "3.173",
     parent: "2.16",
-    name: "United Kingdom",
-    value: 66181585
-  },
-  {
-    id: "3.174",
-    parent: "2.16",
-    name: "Sweden",
-    value: 9910701
-  },
-  {
-    id: "3.175",
-    parent: "2.16",
-    name: "Denmark",
-    value: 5733551
-  },
-  {
-    id: "3.176",
-    parent: "2.16",
-    name: "Finland",
-    value: 5523231
-  },
-  {
-    id: "3.177",
-    parent: "2.16",
-    name: "Norway",
-    value: 5305383
-  },
-  {
-    id: "3.178",
-    parent: "2.16",
-    name: "Ireland",
-    value: 4761657
-  },
-  {
-    id: "3.179",
-    parent: "2.16",
-    name: "Lithuania",
-    value: 2890297
-  },
-  {
-    id: "3.180",
-    parent: "2.16",
-    name: "Latvia",
-    value: 1949670
-  },
-  {
-    id: "3.181",
-    parent: "2.16",
-    name: "Estonia",
-    value: 1309632
-  },
-  {
-    id: "3.182",
-    parent: "2.16",
-    name: "Iceland",
-    value: 335025
-  },
-  {
-    id: "3.183",
-    parent: "2.16",
-    name: "Guernsey and  Jersey",
-    value: 165314
-  },
-  {
-    id: "3.184",
-    parent: "2.16",
-    name: "Isle of Man",
-    value: 84287
-  },
-  {
-    id: "3.185",
-    parent: "2.16",
-    name: "Faroe Islands",
-    value: 49290
+    fill: "#FF8DC8",
+    value: 143989754
   },
   {
     id: "2.17",
     parent: "eu",
-    name: "Southern Europe",
-    fill: "#66c088"
+    name: "Blockchain and Digital Identity",
+    fill: "#6771DC"
   },
   {
     id: "3.186",
     parent: "2.17",
-    name: "Italy",
+    name: " Governance",
+    fill:"#A6ADFF",
     value: 59359900
   },
   {
     id: "3.187",
     parent: "2.17",
-    name: "Spain",
-    value: 46354321
+    name: " Digital identity",
+    fill:"#A6ADFF",
+    value: 59359900
   },
   {
     id: "3.188",
     parent: "2.17",
-    name: "Greece",
-    value: 11159773
+    name: "Corruption",
+    fill:"#A6ADFF",
+    value: 59359900
   },
-  {
-    id: "3.189",
-    parent: "2.17",
-    name: "Portugal",
-    value: 10329506
-  },
-  {
-    id: "3.190",
-    parent: "2.17",
-    name: "Serbia",
-    value: 8790574
-  },
-  {
-    id: "3.191",
-    parent: "2.17",
-    name: "Croatia",
-    value: 4189353
-  },
-  {
-    id: "3.192",
-    parent: "2.17",
-    name: "Bosnia and Herzegovina",
-    value: 3507017
-  },
-  {
-    id: "3.193",
-    parent: "2.17",
-    name: "Albania",
-    value: 2930187
-  },
-  {
-    id: "3.194",
-    parent: "2.17",
-    name: "Republic of Macedonia",
-    value: 2083160
-  },
-  {
-    id: "3.195",
-    parent: "2.17",
-    name: "Slovenia",
-    value: 2079976
-  },
-  {
-    id: "3.196",
-    parent: "2.17",
-    name: "Montenegro",
-    value: 628960
-  },
-  {
-    id: "3.197",
-    parent: "2.17",
-    name: "Malta",
-    value: 430835
-  },
-  {
-    id: "3.198",
-    parent: "2.17",
-    name: "Andorra",
-    value: 76965
-  },
-  {
-    id: "3.199",
-    parent: "2.17",
-    name: "Gibraltar",
-    value: 34571
-  },
-  {
-    id: "3.200",
-    parent: "2.17",
-    name: "San Marino",
-    value: 33400
-  },
-  {
-    id: "3.201",
-    parent: "2.17",
-    name: "Vatican City",
-    value: 792
-  },
+  
   {
     id: "2.18",
     parent: "eu",
-    name: "Western Europe",
-    fill: "#4a5b69"
+    name: "Regenerative Finance",
+    fill: "#59A314"
   },
   {
     id: "3.202",
     parent: "2.18",
-    name: "Germany",
+    name: "",
+    fill:"#D4E7CB",
     value: 82114224
-  },
-  {
-    id: "3.203",
-    parent: "2.18",
-    name: "France",
-    value: 64979548
-  },
-  {
-    id: "3.204",
-    parent: "2.18",
-    name: "Netherlands",
-    value: 17035938
-  },
-  {
-    id: "3.205",
-    parent: "2.18",
-    name: "Belgium",
-    value: 11429336
-  },
-  {
-    id: "3.206",
-    parent: "2.18",
-    name: "Austria",
-    value: 8735453
-  },
-  {
-    id: "3.207",
-    parent: "2.18",
-    name: "Switzerland",
-    value: 8476005
-  },
-  {
-    id: "3.208",
-    parent: "2.18",
-    name: "Luxembourg",
-    value: 583455
-  },
-  {
-    id: "3.209",
-    parent: "2.18",
-    name: "Monaco",
-    value: 38695
-  },
-  {
-    id: "3.210",
-    parent: "2.18",
-    name: "Liechtenstein",
-    value: 37922
   }
 ];
 
