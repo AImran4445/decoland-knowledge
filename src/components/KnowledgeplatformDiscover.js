@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import './knowledgeplatformDiscover.css';
 import SunburstAnyChart from './SunburstAnyChart';
 import articleImage from '../assets/image-7.png';
@@ -7,6 +8,7 @@ import articleimage from '../assets/image-article.png';
 import { Link } from 'react-router-dom';
 
 function KnowledgeplatformDiscover() {
+ 
   return (
     <div className='main-container'>
       <div className='left-container'>

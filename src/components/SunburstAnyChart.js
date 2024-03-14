@@ -3,6 +3,9 @@ import AnyChart from "anychart-react";
 import anychart from "anychart";
 import "./style.css";
 
+//all child that have parent id eu all are second parent in the graph 
+//just need to remove the value 
+
 var data = [
   {
     id: "eu",
@@ -70,6 +73,7 @@ var data = [
     name: " Governance",
     fill:"#A6ADFF",
     value: 59359900
+    
   },
   {
     id: "3.187",
